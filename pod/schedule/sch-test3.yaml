@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: sch-test3
+  name: sch-test3
+spec:
+  nodeName: k8s-node2
+  containers:
+  - image: nginx:1.25.3
+    name: sch-test3
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
