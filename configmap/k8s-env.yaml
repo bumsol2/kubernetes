@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  orchestrator: kubernetes
+  runtime: containerd
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-04-11T16:57:45Z"
+  name: k8s-env
+  namespace: default
+  resourceVersion: "326452"
+  uid: 84a51e22-e254-413a-aadc-d9f5f48584f8

@@ -1,0 +1,4 @@
+FROM node:21-slim
+EXPOSE 8000
+COPY runapp2.js . 
+CMD node runapp2.js
