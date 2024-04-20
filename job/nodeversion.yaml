@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: nodeversion
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - command:
+        - node
+        - -v                #job이 실행한 작업 지정
+        image: node
+        name: nodeversion
+        resources: {}
+      restartPolicy: Never #컨테이너가 실패하거나 종료되는 경우 컨테이너를 다시 시작하지 않도록 지정
+status: {}

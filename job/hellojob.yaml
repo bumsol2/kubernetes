@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: hello-job
+spec:
+  activeDeadlineSeconds: 15
+  parallelism: 5
+  completions: 10 # 원하는 Pod수를 지정, 하나씩 완료될 떄까지 관리 
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - command:
+        - echo
+        - Hello I'm running job
+        image: busybox
+        name: hello-job
+        resources: {}
+      restartPolicy: Never
+status: {}
