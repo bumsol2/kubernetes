@@ -1,0 +1,3 @@
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS      CLAIM                    STORAGECLASS   REASON   AGE
+pvc-dcb77b0a-4bdb-4050-8709-7d2e82494675   3Gi        RWO,RWX        Retain           Bound       default/task-pvc-cliam   manual                  91m
+task-pv-volume                             10Gi       RWX            Retain           Available                            manual                  91m
