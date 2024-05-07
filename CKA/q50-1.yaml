@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: myapp
+  name: hungry-bear
+spec:
+  containers:
+  - image: alpine
+    name: checker
+    command: ['sh', '-c', 'echo "The app is running!" > /workdir/calm.txt && sleep 3']
+    volumeMounts:
+    - name: workdir
+      mountPath: /workdir
+  initContainers:
+  - name: create
+    image: alpine
+    command: ['sh', '-c', '/workdir/calm.txt']
+    volumeMounts:
+    - name: workdir
+      mountPath: /workdir
+  volumes:
+  - name: workdir
+    emptyDir: {}

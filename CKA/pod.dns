@@ -1,0 +1,6 @@
+Server:		10.96.0.10
+Address:	10.96.0.10:53
+
+47.131.109.10.in-addr.arpa	name = 10-109-131-47.nginx-random.default.svc.cluster.local
+
+pod "dns-verify" deleted

@@ -1,0 +1,25 @@
+NAMESPACE     NAME                                       READY   STATUS             RESTARTS         AGE
+default       busybox-q38                                1/1     Running            0                3m49s
+default       csi-hostpath-socat-0                       1/1     Running            3 (91m ago)      3d4h
+default       csi-hostpathplugin-0                       8/8     Running            25 (91m ago)     3d4h
+default       nginx-random-8b47bd49c-wzw7f               1/1     Terminating        0                28h
+default       prod                                       1/1     Running            0                44m
+default       snapshot-controller-0                      1/1     Terminating        2 (29h ago)      3d4h
+engineering   nginx-q33                                  0/1     CrashLoopBackOff   19 (2m6s ago)    74m
+kube-system   calico-kube-controllers-658d97c59c-ck54k   1/1     Running            4 (92m ago)      3d6h
+kube-system   calico-node-5ljwh                          1/1     Running            6 (92m ago)      4d19h
+kube-system   calico-node-9547s                          1/1     Running            5 (91m ago)      4d19h
+kube-system   calico-node-nm2w5                          1/1     Running            4 (29h ago)      4d19h
+kube-system   coredns-5dd5756b68-pqvfg                   1/1     Running            4 (92m ago)      3d6h
+kube-system   coredns-5dd5756b68-t4t42                   1/1     Running            4 (92m ago)      3d6h
+kube-system   etcd-k8s-master                            1/1     Running            6 (92m ago)      4d19h
+kube-system   kube-apiserver-k8s-master                  1/1     Running            6 (92m ago)      4d19h
+kube-system   kube-controller-manager-k8s-master         1/1     Running            6 (92m ago)      4d19h
+kube-system   kube-proxy-h5mcs                           1/1     Running            4 (29h ago)      4d19h
+kube-system   kube-proxy-h88vs                           1/1     Running            5 (91m ago)      4d19h
+kube-system   kube-proxy-vs25t                           1/1     Running            6 (92m ago)      4d19h
+kube-system   kube-scheduler-k8s-master                  1/1     Running            6 (92m ago)      4d19h
+kube-system   metrics-server-69fbf9bc86-85nks            0/1     Terminating        75 (27h ago)     2d5h
+kube-system   metrics-server-69fbf9bc86-hmr4b            0/1     CrashLoopBackOff   21 (3m24s ago)   86m
+kube-system   metrics-server-84989b68d9-gvbtn            1/1     Terminating        1 (29h ago)      2d5h
+kube-system   metrics-server-84989b68d9-pw5tp            1/1     Running            0                86m

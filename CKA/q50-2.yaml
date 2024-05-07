@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: init-cont-pod
+spec:
+  containers:
+  - image: alpine
+    name: main-container
+    args: [/bin/sh, -c, 'if [ -f /workdir/test.txt ]; then echo "the app is running!" > /workdir/test.txt && sleep 9999; fi']
+    volumeMounts:
+    - name: initvolume
+      mountPath: /workdir
+  initContainers:
+  - image: alpine
+    name: init-container
+    args: [/bin/sh, -c, 'touch /workdir/test.txt']
+    volumeMounts:
+    - name: initvolume
+      mountPath: /workdir
+  volumes:
+  - name: initvolume
+    emptyDir: {}
+  restartPolicy: Never
